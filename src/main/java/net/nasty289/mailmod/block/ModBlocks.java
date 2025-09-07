@@ -17,7 +17,7 @@ public class ModBlocks {
 
     public static final Block MAILBOX = registerBlocks("mailbox",
             new MailboxBlock(AbstractBlock.Settings.create().strength(5f)
-                    .requiresTool().sounds(BlockSoundGroup.METAL)));
+                    .requiresTool().sounds(BlockSoundGroup.METAL).nonOpaque()));
 
     private static Block registerBlocks (String name, Block block) {
         registerBlockItem(name, block);
