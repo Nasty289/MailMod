@@ -3,6 +3,7 @@ package net.nasty289.mailmod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -15,7 +16,7 @@ import net.nasty289.mailmod.MailMod;
 public class ModBlocks {
 
     public static final Block MAILBOX = registerBlocks("mailbox",
-            new Block(AbstractBlock.Settings.create().strength(5f)
+            new MailboxBlock(AbstractBlock.Settings.create().strength(5f)
                     .requiresTool().sounds(BlockSoundGroup.METAL)));
 
     private static Block registerBlocks (String name, Block block) {
